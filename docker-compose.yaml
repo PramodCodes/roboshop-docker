@@ -39,6 +39,11 @@ services:
   shipping:
     image: shipping:1
     container_name: shipping
+    depends_on:
+    - catalogue
+    - cart
+    - mysql
+    - user
     
   web:
     image: web:1
