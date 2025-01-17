@@ -50,6 +50,7 @@ services:
     - cart
     - payment
     - shipping
+    - user
     
   rabbitmq:
     container_name: rabbitmq
