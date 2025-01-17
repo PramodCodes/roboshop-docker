@@ -26,10 +26,14 @@ services:
     depends_on:
     - redis
     - catalogue
+    
+  mysql:
+    image: mysql:1
+    
   web:
     image: web:1
     ports:
     - "80:80"
     depends_on:
     - catalogue
-      
+    
