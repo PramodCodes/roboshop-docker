@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:18.19.1-alpine3.19
 EXPOSE 8080
 # changing work directory to opt/server everything will happend in WORKDIR
 WORKDIR /opt/server
