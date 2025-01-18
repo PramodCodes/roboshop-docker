@@ -34,7 +34,7 @@ services:
     
   mysql:
     image: mysql:1
-    container_name: web
+    container_name: mysql
     
   shipping:
     image: shipping:1
