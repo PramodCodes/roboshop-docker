@@ -34,16 +34,13 @@ services:
     
   mysql:
     image: mysql:1
-    container_name: mysql
+    container_name: web
     
   shipping:
     image: shipping:1
     container_name: shipping
     depends_on:
-    - catalogue
-    - cart
-    - mysql
-    - user
+    - web
     
   web:
     image: web:1
@@ -54,7 +51,6 @@ services:
     - catalogue
     - cart
     - payment
-    - shipping
     - user
     
   rabbitmq:
